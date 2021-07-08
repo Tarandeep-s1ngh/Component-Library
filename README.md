@@ -1,2 +1,3 @@
-# neogcamp-lesson-3
- Making a component library
+# My Portfolio
+ "Simple yet effective"  
+ Checkout my portfolio!
