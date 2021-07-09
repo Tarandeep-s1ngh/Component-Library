@@ -4,11 +4,14 @@
     --primary-colour: #ED5D40;
     --dark-gray: #6B7280;
     --off-white: #F3F4F6;
+    /* --white: #FFFFFF;
+    --dark-colour: #333333; */
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+    /* background-color:var(--white); */
 }
 
 hr {
@@ -38,12 +41,13 @@ hr {
     background-color: var(--primary-colour);
     border-radius: 0.5rem;
     color: white;
+    border: 2px solid var(--primary-colour);
 }
 
 .link-secondary {
     color: var(--primary-colour);
     border-radius: 0.5rem;
-    border: 1px solid var(--primary-colour);
+    border: 2px solid var(--primary-colour);
 }
 
 /* lists */
@@ -86,6 +90,13 @@ hr {
 .navigation .link-active {
     font-weight: bold;
 }
+
+/* #darkmode-icon {
+    box-sizing: border-box;
+    position: relative;
+    width: 30px;
+    cursor: pointer;
+} */
 
 /* header */
 
