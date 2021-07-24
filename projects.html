@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,15 @@
     <title>Projects | Tarandeep Singh</title>
 
     <link href="styles.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/icofont/icofont.min.css">
 </head>
+
 <body>
 
     <nav class="navigation container">
-        <div class="nav-brand">Tarandeep Singh</div>
+        <div class="nav-brand"><a href="/" class="link"> <img class="nav-img" src="images/logo-t.svg">
+                <span>Tarandeep Singh</span></a></div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
                 <a class="link" href="/">Home</a>
@@ -28,6 +33,98 @@
     </nav>
 
     <header class="hero">
-        <img class="hero-img" src="/images/hero.svg">
-        <h1 class="hero-heading">Hi there, I am <span class="hero-heading-inverted">Tarandeep Singh</span></h1>
+        <img class="hero-img" src="/images/projects.svg">
+        <h1 class="hero-heading">My <span class="hero-heading-inverted">Projects</span></h1>
+        <p style="text-align: center;">I like to build interactive projects. I believe the fastest way to <span
+                class="hero-heading-inverted">learn and grow</span> is by making projects. Checkout my projects <span
+                class="hero-heading-inverted">in action.</span></p>
     </header>
+
+    <section class="projects-list">
+        <ol reversed class="rev-ol">
+
+            <li>
+                <h2>G-Minor: The Music Recommender</h2>
+                <small>July, 2021</small>
+                <p>Music that you will listen on loop! A web app built using <strong>reactJS</strong> which recommends
+                    my favourite songs from different categories.</p>
+                <a class="link link-primary" href="https://bfrq1.csb.app/" target="blank_">Live Project</a>
+                <a class="link link-secondary" href="https://github.com/Tarandeep-s1ngh/Music-Recommender"
+                    target="blank_">View Source Code</a>
+            </li>
+
+            <li>
+                <h2>Emoji Interpreter</h2>
+                <small>July, 2021</small>
+                <p>An Interpreter for Food and Drink emojis built using <strong>reactJS</strong>.</p>
+                <a class="link link-primary" href="https://ontuv.csb.app/" target="blank_">Live Project</a>
+                <a class="link link-secondary" href="https://github.com/Tarandeep-s1ngh/Emoji-Interpreter"
+                    target="blank_">View Source Code</a>
+            </li>
+
+            <li>
+                <h2>Star Wars: Yoda Speaks</h2>
+                <small>June, 2021</small>
+                <p>A web app built using <strong>JavaScript and API</strong> which translates the sentance and makes it
+                    sound like if Yoda himself has said it!</p>
+                <a class="link link-primary" href="https://yodatalks.netlify.app/" target="blank_">Live Project</a>
+                <a class="link link-secondary" href="https://github.com/Tarandeep-s1ngh/Yoda-Speak-Translator"
+                    target="blank_">View Source Code</a>
+            </li>
+
+            <li>
+                <h2>Minion Language Translator</h2>
+                <small>June, 2021</small>
+                <p>A web app built using <strong>JavaScript and API</strong> which translates the English language to
+                    the language of Minions!</p>
+                <a class="link link-primary" href="https://minions-bananas.netlify.app/" target="blank_">Live
+                    Project</a>
+                <a class="link link-secondary" href="https://github.com/Tarandeep-s1ngh/Banana-language-translator"
+                    target="blank_">View Source Code</a>
+            </li>
+
+            <li>
+                <h2>Anime Quiz</h2>
+                <small>June, 2021</small>
+                <p>A fun CLI quiz app built using <strong>nodeJS & chalkJS</strong> which tests if you are a real Anime
+                    Fan or not!</p>
+                <a class="link link-primary"
+                    href="https://replit.com/@TarandeepS1ngh/Anime-Quiz#index.js?embed=1&output=1" target="blank_">Live
+                    Project</a>
+                <a class="link link-secondary" href="https://github.com/Tarandeep-s1ngh/Anime_Quiz" target="blank_">View
+                    Source Code</a>
+            </li>
+
+            <li>
+                <h2>How well do you know me?</h2>
+                <small>May, 2021</small>
+                <p>A simple and fun CLI quiz app built using <strong>nodeJS</strong> which tests how well the user knows
+                    me!</p>
+                <a class="link link-primary"
+                    href="https://replit.com/@TarandeepS1ngh/Personal-Quiz#index.js?embed=1&output=1"
+                    target="blank_">Live Project</a>
+                <a class="link link-secondary" href="https://github.com/Tarandeep-s1ngh/Buddy_Quiz" target="blank_">View
+                    Source Code</a>
+            </li>
+        </ol>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-header">Get in touch!</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="mailto: taran.s1608@gmail.com" target="_blank"><i
+                        class="icofont-send-mail"></i></a></li>
+            <li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/tarandeep-s1ngh/"
+                    target="_blank"><i class="icofont-linkedin"></i></a></li>
+            <li class="list-item-inline"><a class="link" href="https://github.com/Tarandeep-s1ngh " target="_blank"><i
+                        class='bx bxl-github'></i></a></li>
+            <li class="list-item-inline"><a class="link" href="https://twitter.com/Tarandeep_s1ngh" target="_blank"><i
+                        class="icofont-twitter"></i></a></li>
+
+        </ul>
+        <p>Made with ❤ by Tarandeep Singh</p>
+    </footer>
+
+</body>
+
+</html>

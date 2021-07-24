@@ -66,7 +66,7 @@ hr {
 .navigation {
     background-color: var(--primary-colour);
     color: white;
-    padding: 1rem;
+    padding: 1.3rem;
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
 }
@@ -80,7 +80,14 @@ hr {
 }
 
 .navigation .nav-brand {
+    position: absolute;
     font-weight: bold;
+}
+
+.navigation .nav-brand span {
+    position: absolute;
+    padding: 0.4rem 0rem 0rem 1rem;
+    min-width: 10rem;
 }
 
 .navigation .nav-pills {
@@ -106,6 +113,7 @@ hr {
 
 .hero .hero-img {
     max-width: 380px;
+    max-height: 200px;
     display: block;
     margin: auto;
 }
@@ -139,12 +147,32 @@ hr {
     text-align: justify;
 }
 
+.section .p-heading-inverted {
+    color: var(--primary-colour);
+}
+
 .section h1 {
     text-align: center;
 }
 
+.projects-list {
+    padding-left: 1.5rem;
+}
+
 .ow {
     background-color: var(--off-white);
+}
+
+.rev-ol {
+    padding-bottom: 0.7rem;
+}
+
+.rev-ol li {
+    padding-bottom: 2.5rem;
+}
+
+.rev-ol h2 {
+    margin-bottom: 0rem;
 }
 
 /* footer */
