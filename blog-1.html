@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Blogs | Tarandeep Singh</title>
+
+    <link href="styles.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/icofont/icofont.min.css">
+</head>
+
+<body>
+
+    <nav class="navigation container">
+        <div class="nav-brand"><a href="/" class="link"> <img class="nav-img" src="images/logo-t.svg">
+                <span>Tarandeep Singh</span></a></div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">Home</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="projects.html">Projects</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <img class="blog-img"
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--FsXBIysb--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bwkiep19u7yy51nou1ni.png">
+        <h1 class="hero-heading">Amazing <span class="hero-heading-inverted">CSS Tips & Tricks</span></h1>
+        <div style="text-align: center;"><small>26 July,2021</small></div>
+    </header>
+
+    <section style="max-width: 70%; margin: auto; text-align: justify;">
+        <p>
+            Wanna know how to use modern CSS features to write clean code by using some stunning CSS tricks? You have
+            just landed at the right place!
+
+            <h2>A Tip For Beginners</h2>
+            Here's a quick tip for those who have just started to learn CSS - DON'T use Bootstrap or Tailwind! No doubt
+            they are great tools to get a nice-looking UI quickly but using these will mean that you'll be missing on
+            CSS fundamentals. I have personally done this mistake & oh boy did I regret it.
+
+            <br /><br />
+
+            <h2>Grid is Great</h2>
+            Unlike flexbox which only deals with individual columns & rows, Grid allows you to think about the big
+            picture. When you set an element to `display: grid;` you can then define its children as a bunch of columns
+            & rows. Have a look at the amount of code we have eliminated by using grid instead of flexbox in the image
+            below.
+            <br /><br />
+            <img style=" display: block; margin: auto;"
+                src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/uey8kgmk3ybat10wby6j.jpg" />
+            <br />
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout">Click here to read more about CSS
+                Grid Layout</a>
+
+            <br /><br />
+
+            <h2>CSS Debugging</h2>
+            We often use Chrome developer tools for debugging our code (including CSS) but you'll be surprised to know
+            that Firefox developer tools are much superior especially when it comes to CSS. On inspecting an element in
+            Firefox, you'll have a break-down of the box-model like you have in Chrome but you can also edit properties
+            on it directly, for instance changing the padding or margin and it will also give you a breakdown of all the
+            properties that are influencing the box-model. Not only this, Firefox also provides really nice graphics for
+            flex & grid layouts.
+            <br /><br />
+            <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7a39m463qcewxi2vbey2.jpg" />
+            <br />
+
+            <h2>Image Filters</h2>
+            It's fun to play around with images in CSS, but did you know that we can apply amazing effects to those
+            images. In fact CSS allows using lots of filters on the images to help developers play with the graphics
+            without changing it in Photoshop. Let’s have a look at some of the filters:
+
+            <pre>
+                <code>
+                .image img {
+                max-width: 300px;
+                }
+
+                .blur {
+                filter: blur(5px);
+                }
+
+                .grayscale {
+                filter: grayscale(100%);
+                }
+
+                .brightness {
+                filter: brightness(150%);
+                }
+
+                .saturate {
+                filter: saturate(200%);
+                }
+
+                .invert {
+                filter: invert(100%);
+                }
+
+                .huerotate {
+                filter: hue-rotate(180deg);
+                }
+                </code>
+            </pre>
+            <br />
+            I have much more to write and share with you guys but it's getting a little long, so comment below if you
+            want part 2 of <strong>Amazing CSS Tips & Tricks</strong>.
+
+            <br /><br />
+
+            Read all my blogs <a class="link-blog" href="https://dev.to/tarandeep_singh" target="_blank">here.</a>
+            <br /><br />
+            You can follow me on <a class="link-blog" href="https://twitter.com/Tarandeep_s1ngh"
+                target="_blank">Twitter</a> and <a class="link-blog" href="https://www.linkedin.com/in/tarandeep-s1ngh/"
+                target="_blank">LinkedIn.</a>
+        </p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-header">Get in touch!</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="mailto: taran.s1608@gmail.com" target="_blank"><i
+                        class="icofont-send-mail"></i></a></li>
+            <li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/tarandeep-s1ngh/"
+                    target="_blank"><i class="icofont-linkedin"></i></a></li>
+            <li class="list-item-inline"><a class="link" href="https://github.com/Tarandeep-s1ngh " target="_blank"><i
+                        class='bx bxl-github'></i></a></li>
+            <li class="list-item-inline"><a class="link" href="https://twitter.com/Tarandeep_s1ngh" target="_blank"><i
+                        class="icofont-twitter"></i></a></li>
+
+        </ul>
+        <p>Made with ❤ by Tarandeep Singh</p>
+    </footer>
+
+</body>
+
+</html>

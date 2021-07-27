@@ -4,6 +4,7 @@
     --primary-colour: #ED5D40;
     --dark-gray: #6B7280;
     --off-white: #F3F4F6;
+    scroll-behavior: smooth;
     /* --white: #FFFFFF;
     --dark-colour: #333333; */
 }
@@ -173,6 +174,13 @@ hr {
 .blogs-list {
     max-width: 85%;
     margin: auto;
+}
+
+pre code {
+    color: white;
+    background-color: #222222;
+    display: block;
+    border: 1px solid #999;
 }
 
 .blogs-list ol li {

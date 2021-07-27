@@ -1,11 +1,11 @@
 <svg width="215" height="215" viewBox="0 0 215 215" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="107.5" cy="107.5" r="105.5" fill="url(#paint0_radial)" stroke="white" stroke-width="4"/>
-<path d="M180 49H35C30.5817 49 27 52.5817 27 57V77.0602C27 81.4785 30.5817 85.0602 35 85.0602H82.688C87.1062 85.0602 90.688 88.642 90.688 93.0602V187C90.688 191.418 94.2697 195 98.688 195H122.246C126.664 195 130.246 191.418 130.246 187V93.0602C130.246 88.642 133.827 85.0602 138.246 85.0602H180C184.418 85.0602 188 81.4785 188 77.0602V57C188 52.5817 184.418 49 180 49Z" fill="#C31BFE" stroke="white" stroke-width="4"/>
+<circle cx="107.5" cy="107.5" r="104.5" fill="url(#paint0_radial)" stroke="white" stroke-width="6"/>
+<path d="M173 51H41C36.5817 51 33 54.5817 33 59V76.0964C33 80.5147 36.5817 84.0964 41 84.0964H83.5455C87.9637 84.0964 91.5455 87.6781 91.5455 92.0964V177C91.5455 181.418 95.1272 185 99.5455 185H119.909C124.327 185 127.909 181.418 127.909 177V92.0964C127.909 87.6781 131.491 84.0964 135.909 84.0964H173C177.418 84.0964 181 80.5147 181 76.0964V59C181 54.5817 177.418 51 173 51Z" fill="white" stroke="white" stroke-width="4"/>
 <defs>
 <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(107.5 107.5) rotate(90.2984) scale(96.0013 155.19)">
-<stop stop-color="#00F0FF" stop-opacity="0.33"/>
-<stop offset="0.681818" stop-color="#5AB9FF" stop-opacity="0.81"/>
-<stop offset="1" stop-color="#839EFC" stop-opacity="0.58"/>
+<stop stop-color="#00F0FF" stop-opacity="0.9"/>
+<stop offset="0.681818" stop-color="#A971BD" stop-opacity="0.81"/>
+<stop offset="1" stop-color="#C31BFE" stop-opacity="0.88"/>
 </radialGradient>
 </defs>
 </svg>
