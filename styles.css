@@ -111,6 +111,12 @@ hr {
 
 /* header */
 
+.blog-img {
+    max-width: 800px;
+    display: block;
+    margin: auto;
+}
+
 .hero {
     padding: 2rem;
 }
