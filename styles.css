@@ -37,6 +37,10 @@ hr {
     padding: 0.5rem 1rem;
 }
 
+.link-blog {
+    text-decoration: none;
+}
+
 .link-primary {
     background-color: var(--primary-colour);
     border-radius: 0.5rem;
@@ -116,6 +120,7 @@ hr {
     max-height: 200px;
     display: block;
     margin: auto;
+    padding-right: 2rem;
 }
 
 .hero .hero-heading {
