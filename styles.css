@@ -114,7 +114,7 @@ hr {
 /* header */
 
 .blog-img {
-    max-width: 800px;
+    max-width: 70%;
     display: block;
     margin: auto;
 }
