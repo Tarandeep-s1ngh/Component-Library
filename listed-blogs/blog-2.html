@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Blogs | Tarandeep Singh</title>
+
+    <link href="/styles.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/icofont/icofont.min.css">
+</head>
+
+<body>
+
+    <nav class="navigation container">
+        <div class="nav-brand"><a href="/" class="link"> <img class="nav-img" src="/images/logo-t.svg">
+                <span>Tarandeep Singh</span></a></div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">Home</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <img class="blog-img"
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--2RmQLODq--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ooopbd1wsezk43hn9wv5.png">
+        <h1 class="hero-heading">Amazing <span class="hero-heading-inverted">CSS Tips & Tricks - Part 2</span></h1>
+        <div style="text-align: center;"><small>30 July,2021</small></div>
+    </header>
+
+    <section style="max-width: 70%; margin: auto; text-align: justify;">
+        <p>
+            After an amazing response on my first "Amazing CSS Tips & Tricks" blog, here I am with Part-2. So gear up and get ready to take a dive into CSS!
+
+            <h2>Clamp it Down</h2>
+            Making the websites responsive is a big headache for most developers as they have to write lengthy code with lots of media queries. But I have a life-saver for you guys. You can use functions like min, max, and clamp to refactor your code. The following code shows how you can set the width to a clamped value that has a minimum of 200 pixels, a max of 600, and a preferred value of 50%.
+
+            <pre>
+                <code>
+                    article {
+                        width: clamp(200px, 50%, 600px);
+                    }
+                </code>
+            </pre>
+            The following comparison image shows how I turned 13 lines of code into just 1 using this trick:
+            <br /><br />
+            <img style="max-width: 100%;" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8rfbiq6uvviviwqp56bb.png" />
+            <br />
+
+            <h2>The link pseudo-class</h2>
+            A lot of developers and designers often miss this simple yet effective CSS trick that solves usability issues with visitors.
+
+            <pre>
+                <code>
+                    a:link { color: blue; }
+                    a:visited { color: purple; }
+                </code>
+            </pre>
+            The link: pseudo-class controls all links that haven’t been clicked on yet & the :visited pseudo-class handles the styling of all of the links user has already visited. This tells the visitors where they have already been on your site, and where they have yet to explore.
+            <br /><br />
+
+            <h2>Drop Caps</h2>
+            Drop caps remind me of the traditional printed books & newspapers. I just love it as it is a great way to start a page with written content. That first, large letter really grabs your attention. We can use :first-letter to create a drop cap in CSS. Here’s an example:
+
+            <pre>
+                <code>
+                    p:first-letter {
+                        font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+                        float: left;
+                        font-size: 6rem;
+                        line-height: 0.65;
+                        margin: 0.1em 0.1em 0.2em 0;
+                      }
+                </code>
+            </pre>
+            Output:
+            <img style="max-width: 100%;" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/y5u3x73txtfkjnomiwty.png" />
+
+            <br /><br />
+            <h2>Hover Effects</h2>
+            This might be an easy one, yet very useful. If you want to highlight something whenever the user hovers the mouse over it then add :hover to that button, text link, block section or icon. Here's how the CSS would look if you wanted to change the color of h2 tag whenever the user hovers over it:
+
+            <pre>
+                <code>
+                    .entry h2{
+                        font-size:24px;
+                        color:#000;
+                        font-weight:700;
+                    }
+                    
+                    .entry h2:hover{
+                        color:#f00;
+                    }
+                </code>
+            </pre>
+            <br />
+
+            <h2>Transition for Hover Effect</h2>
+            For hover effects, on menus or images in your website, you don’t want colors snapping too quickly as they might not look pleasing to the end-user. So ideally, we should ease the change gradually, which is where the transition property comes into play. The following code shows how in the same hover effect used above, we can make the change happen over .4 seconds, instead of just instantly snapping to red.
+
+            <pre>
+                <code>
+                    .entry h2 {
+                        transition: color 0.3s ease;
+                      }
+                      
+                      .entry h2:hover{
+                          color:#f00;
+                      }
+                </code>
+            </pre>
+            <br />
+            That's all for this one! I want to thank all of you guys for such an overwhelming response on my first blog. I was amazed to see how it got 60+ bookmarks in just 24 hours of posting it! If you have not seen it, Check it out <a class="link-blog" href="https://dev.to/tarandeep_singh/amazing-css-tips-tricks-1jl0" target="_blank">here.</a>
+            Tell me in the comments which trick did you guys liked the most!
+
+            <br /><br />
+
+            Read all my blogs <a class="link-blog" href="https://dev.to/tarandeep_singh" target="_blank">here.</a>
+            <br /><br />
+            You can follow me on <a class="link-blog" href="https://twitter.com/Tarandeep_s1ngh"
+                target="_blank">Twitter</a> and <a class="link-blog" href="https://www.linkedin.com/in/tarandeep-s1ngh/"
+                target="_blank">LinkedIn.</a>
+        </p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-header">Get in touch!</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="mailto: taran.s1608@gmail.com" target="_blank"><i
+                        class="icofont-send-mail"></i></a></li>
+            <li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/tarandeep-s1ngh/"
+                    target="_blank"><i class="icofont-linkedin"></i></a></li>
+            <li class="list-item-inline"><a class="link" href="https://github.com/Tarandeep-s1ngh " target="_blank"><i
+                        class='bx bxl-github'></i></a></li>
+            <li class="list-item-inline"><a class="link" href="https://twitter.com/Tarandeep_s1ngh" target="_blank"><i
+                        class="icofont-twitter"></i></a></li>
+
+        </ul>
+        <p>Made with ❤ by Tarandeep Singh</p>
+    </footer>
+
+</body>
+
+</html>

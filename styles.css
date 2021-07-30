@@ -40,6 +40,7 @@ hr {
 
 .link-blog {
     text-decoration: none;
+    color: var(--primary-colour);
 }
 
 .link-primary {
@@ -174,6 +175,10 @@ hr {
 .blogs-list {
     max-width: 85%;
     margin: auto;
+}
+
+pre {
+    margin: 0;
 }
 
 pre code {
