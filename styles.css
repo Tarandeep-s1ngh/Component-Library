@@ -213,6 +213,10 @@ pre code {
     padding-bottom: 2.5rem;
 }
 
+.projects-list p {
+    margin-bottom: 0.5em;
+}
+
 .rev-ol h2 {
     margin-bottom: 0rem;
 }
