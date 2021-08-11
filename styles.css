@@ -215,6 +215,7 @@ pre code {
 
 .projects-list p {
     margin-bottom: 0.5em;
+    line-height: 1.5;
 }
 
 .rev-ol h2 {
