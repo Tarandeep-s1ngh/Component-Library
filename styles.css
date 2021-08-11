@@ -188,6 +188,12 @@ pre code {
     border: 1px solid #999;
 }
 
+.alone-code {
+    color: white;
+    background-color: #222222;
+    border: 1px solid #999;
+}
+
 .blogs-list ol li {
     text-align: center;
     border: 1.5px solid black;

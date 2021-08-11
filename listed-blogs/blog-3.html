@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Blogs | Tarandeep Singh</title>
+
+    <link href="/styles.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/icofont/icofont.min.css">
+</head>
+
+<body>
+
+    <nav class="navigation container">
+        <div class="nav-brand"><a href="/" class="link"> <img class="nav-img" src="/images/logo-t.svg">
+                <span>Tarandeep Singh</span></a></div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">Home</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link" href="/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <img class="blog-img"
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--cGnkNsFj--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/0hecn291v5i6yumvhgw6.png">
+        <h1 class="hero-heading">How to do wiring in <span class="hero-heading-inverted">VanillaJS</span></h1>
+        <div style="text-align: center;"><small>10 August,2021</small></div>
+    </header>
+
+    <section style="max-width: 70%; margin: auto; text-align: justify;">
+        <p>
+            After an unbelievable start to my blogging journey, with my first two blogs crossing over 120+ bookmarks combined, here I am with my third blog! This time around we are going to touch on the basics of JavaScript.<br><br>
+
+            "VanillaJS" is a term that developers use to describe regular JavaScript. It means using the inbuilt JavaScript methods and objects without any additional libraries or frameworks.
+
+            <h2>Why VanillaJS?</h2>
+            So why use VanillaJS instead of libraries or frameworks? Well, we gotta admit libraries like ReactJS are just amazing but VanillaJS is faster than any other JavaScript framework because it has fewer overheads. Moreover, Using frameworks or libraries in JS is a little like using Bootstrap or Tailwind in CSS, we might miss out on the fundamentals, it eliminates control over your abilities to solve the problem in a different most probably in a better way. For beginners, it's better to start off with VanillaJS and then shift to any framework with the confidence of knowing what actually is going on in that framework!
+
+            <br />
+
+            <h2>What is wiring?</h2>
+            Wiring is basically connecting different components with a wire. Pretty much like we did in electric circuits while studying physics! Remember connecting a bulb, switch and battery using a wire? That's it! So connecting different code components like input, output and processing is what we are aiming for.
+
+            <br /><br />
+            <img style="max-width: 100%;"
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--ZITgZWUT--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ejdn2b8folbqi9vi77mc.jpg" />
+
+            <h2>Wiring a Button</h2>
+            1. Create a button in HTML & give it an id <code class="alone-code">&lt;button id="btn-click">Click</button></code>
+            <br>
+            2. Refer button using <code class="alone-code">querySelector()</code> in "app.js" <code class="alone-code">var btnClick = document.querySelector("#btn-click");</code>
+            <br>
+            3. Add event listener to button <code class="alone-code">btnClick.addEventListner("click", function clickEventHandler() {
+            })</code>
+            If you are an absolute beginner then do read about the querySelector(), event listener & callbacks in JavaScript at <a class="link-blog" href="https://developer.mozilla.org/en-US/" target="_blank">MDN Docs</a>
+
+            <br /><br />
+            <h2>Wiring a textarea input</h2>
+            1. Create a <code class="alone-code">textarea</code> input tag & give it an id <code class="alone-code">&lt;textarea id="txt-input"></textarea></code> 
+            <br>
+            2. Now refer it in js file <code class="alone-code">var txtInput = document.querySelector("#txt-input");</code>
+            <br>
+            3. Read the <code class="alone-code">value</code> of the tag. You can do this only inside event. For this we are using the same event listener we wrote in 3rd point of 'Wiring a Button' <code class="alone-code">btnClick.addEventListner("click", function clickEventHandler() { txtInput.value;
+            })</code>
+
+            <br />
+
+            <h2>Wiring a div to show output</h2>
+            1. Create an output div with an id <code class="alone-code">&lt;div id="output"></div></code>
+            <br>
+            2. Refer it in js <code class="alone-code">var outputDiv = document.querySelector("#output");</code>
+            <br>
+            3. Use <code class="alone-code">innerText</code> to write to this div dynamically when button click happens <code class="alone-code">btnClick.addEventListner("click", function clickEventHandler() { outputDiv.innerText = txtInput.value;
+            })</code>
+            <br /><br />
+            Now our wiring is complete and the web app is ready to take input in <code class="alone-code">textarea</code> and <code class="alone-code">onclick</code> of a button it'll show output in our output <code class="alone-code">div</code> element.
+
+            <br /><br />
+            Using this simple concept I have made two fun translator web apps:
+            <br />
+            1. Minion Translator: <a class="link-blog" href="https://minions-bananas.netlify.app/" target="_blank">See it in action!</a> | <a class="link-blog" href="https://github.com/Tarandeep-s1ngh/Banana-language-translator" target="_blank">View Source Code</a>
+            <br />
+            2. Yoda Translator: <a class="link-blog" href="https://yodatalks.netlify.app/" target="_blank">See it in action!</a> | <a class="link-blog" href="https://github.com/Tarandeep-s1ngh/Yoda-Speak-Translator" target="_blank">View Source Code</a>
+
+            <br /><br />
+            <img style="max-width: 100%;"
+                src="https://res.cloudinary.com/practicaldev/image/fetch/s--DfFS06qG--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/quwf8b6zrmjqai2jue9w.jpg" />
+
+            <br /><br />
+
+            That's all for this one! You can check out my other blogs <a class="link-blog" href="https://dev.to/tarandeep_singh" target="_blank">here.</a>
+            <br /><br />
+            You can follow me on <a class="link-blog" href="https://twitter.com/Tarandeep_s1ngh"
+                target="_blank">Twitter</a> and <a class="link-blog" href="https://www.linkedin.com/in/tarandeep-s1ngh/"
+                target="_blank">LinkedIn.</a>
+        </p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-header">Get in touch!</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline"><a class="link" href="mailto: taran.s1608@gmail.com" target="_blank"><i
+                        class="icofont-send-mail"></i></a></li>
+            <li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/tarandeep-s1ngh/"
+                    target="_blank"><i class="icofont-linkedin"></i></a></li>
+            <li class="list-item-inline"><a class="link" href="https://github.com/Tarandeep-s1ngh " target="_blank"><i
+                        class='bx bxl-github'></i></a></li>
+            <li class="list-item-inline"><a class="link" href="https://twitter.com/Tarandeep_s1ngh" target="_blank"><i
+                        class="icofont-twitter"></i></a></li>
+
+        </ul>
+        <p>Made with ❤ by Tarandeep Singh</p>
+    </footer>
+
+</body>
+
+</html>
