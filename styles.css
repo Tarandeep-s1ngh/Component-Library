@@ -50,8 +50,22 @@ hr {
     border: 2px solid var(--primary-colour);
 }
 
+.link-primary:hover {
+    background-color: white;
+    border-radius: 0.5rem;
+    color: var(--primary-colour);
+    border: 2px solid var(--primary-colour);
+}
+
 .link-secondary {
     color: var(--primary-colour);
+    border-radius: 0.5rem;
+    border: 2px solid var(--primary-colour);
+}
+
+.link-secondary:hover {
+    background-color: var(--primary-colour);
+    color: white;
     border-radius: 0.5rem;
     border: 2px solid var(--primary-colour);
 }
@@ -72,13 +86,16 @@ hr {
 .navigation {
     background-color: var(--primary-colour);
     color: white;
-    padding: 1.3rem;
+    padding: 0.8rem;
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
 }
 
 .nav-img {
     max-width: 28px;
+    position: relative;
+    top: 8px;
+    right: 4px;
 }
 
 .navigation .link {
@@ -86,14 +103,11 @@ hr {
 }
 
 .navigation .nav-brand {
-    position: absolute;
     font-weight: bold;
 }
 
 .navigation .nav-brand span {
-    position: absolute;
     padding: 0.4rem 0rem 0rem 1rem;
-    min-width: 10rem;
 }
 
 .navigation .nav-pills {
@@ -124,8 +138,8 @@ hr {
 }
 
 .hero .hero-img {
-    max-width: 380px;
-    max-height: 200px;
+    max-width: 80%;
+    width: 380px;
     display: block;
     margin: auto;
     padding-right: 2rem;
