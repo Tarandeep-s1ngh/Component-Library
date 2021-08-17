@@ -4,6 +4,7 @@
     --primary-colour: #ED5D40;
     --dark-gray: #6B7280;
     --off-white: #F3F4F6;
+    --orange-like: rgba(255, 65, 31, 0.897);
     scroll-behavior: smooth;
     /* --white: #FFFFFF;
     --dark-colour: #333333; */
@@ -65,10 +66,19 @@ hr {
 }
 
 .link-secondary:hover {
-    background-color: var(--primary-colour);
+    background-color: var(--orange-like);
     color: white;
     border-radius: 0.5rem;
-    border: 2px solid var(--primary-colour);
+    border: 2px solid var(--orange-like);
+}
+
+@media only screen  and (max-width: 380px) {
+    .link-secondary {
+        color: var(--primary-colour);
+        border-radius: 0.5rem;
+        border: 2px solid var(--primary-colour);
+        margin-top: 0.5em;
+    }
 }
 
 /* lists */
