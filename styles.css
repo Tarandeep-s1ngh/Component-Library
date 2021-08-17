@@ -246,6 +246,11 @@ pre code {
     padding-bottom: 2.5rem;
 }
 
+
+.blogs-list .rev-ol {
+    padding-left: 0;
+}
+
 .projects-list p {
     margin-bottom: 0.5em;
     line-height: 1.5;
