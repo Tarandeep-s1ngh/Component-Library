@@ -5,6 +5,7 @@
     --dark-gray: #6B7280;
     --off-white: #F3F4F6;
     --orange-like: rgba(255, 65, 31, 0.897);
+    --light-black: rgba(0, 0, 0, 0.75);
     scroll-behavior: smooth;
     /* --white: #FFFFFF;
     --dark-colour: #333333; */
@@ -53,10 +54,10 @@ hr {
 }
 
 .link-primary:hover {
-    background-color: white;
+    background-color: var(--light-black);
     border-radius: 0.5rem;
-    color: var(--primary-colour);
-    border: 2px solid var(--primary-colour);
+    color: white;
+    border: 2px solid var(--orange-like);
 }
 
 .link-secondary {
@@ -66,7 +67,7 @@ hr {
 }
 
 .link-secondary:hover {
-    background-color: var(--orange-like);
+    background-color: var(--light-black);
     color: white;
     border-radius: 0.5rem;
     border: 2px solid var(--orange-like);
